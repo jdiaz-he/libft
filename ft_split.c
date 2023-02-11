@@ -6,7 +6,7 @@
 /*   By: jdiaz-he <jdiaz-he@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/10 13:44:49 by jdiaz-he          #+#    #+#             */
-/*   Updated: 2023/02/10 18:53:30 by jdiaz-he         ###   ########.fr       */
+/*   Updated: 2023/02/11 08:22:05 by jdiaz-he         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ static	char	**ft_splitgen(char **split, char *s, char c, size_t wordc)
 	j = 0;
 	while (i < wordc)
 	{
-		if (s[j] != c)
+		if (s[j] != c && s[j])
 		{
 			split[i] = ft_splitword(s, c, &j);
 			if (!split[i])
